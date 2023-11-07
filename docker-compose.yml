@@ -18,10 +18,10 @@ services:
     ports:
       - 8080:8080
     environment:
-       hibernate.hbm2ddl.auto: create
-       javax.persistence.jdbc.driver: org.postgresql.Driver
-       javax.persistence.jdbc.password: 123
-       javax.persistence.jdbc.url: jdbc:postgresql://dbservice/dblibros
-       javax.persistence.jdbc.user: postgres
+       hibernate_hbm2ddl_auto: create
+       javax_persistence_jdbc_driver: org.postgresql.Driver
+       javax_persistence_jdbc_password: 123
+       javax_persistence_jdbc_url: jdbc:postgresql://dbservice/dblibros
+       javax_persistence_jdbc_user: postgres
     depends_on:
      - dbservice
